@@ -1,3 +1,6 @@
-const hasValuesFromArray = (set, array) => new Set(array).isSubsetOf(set);
+const hasValuesFromArray = (set, array) => {
+  const newSet = new Set(array);
+  return newSet.isSubsetOf(set);
+};
 
 export default hasValuesFromArray;
