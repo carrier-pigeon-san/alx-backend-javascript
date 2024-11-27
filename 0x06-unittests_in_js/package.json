@@ -1,0 +1,26 @@
+{
+  "name": "unittests_in_js",
+  "version": "1.0.0",
+  "description": "Various testing frameworks and methodologies in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrier-pigeon-san/alx-backend-javascript/0x06-unittests_in_js"
+  },
+  "keywords": [
+    "Unittests",
+    "js"
+  ],
+  "author": "Sandy Obare",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "express": "^4.21.1",
+    "mocha": "^10.8.2",
+    "request": "^2.88.2",
+    "sinon": "^19.0.2"
+  }
+}
