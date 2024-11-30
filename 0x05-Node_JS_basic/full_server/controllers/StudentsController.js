@@ -14,7 +14,7 @@ class StudentsController {
         });
         res.end();
       })
-      .catch((error) => {
+      .catch(() => {
         res.status(500).send('Cannot load the database');
         res.end();
       });
@@ -37,9 +37,9 @@ class StudentsController {
           res.status(500).send('Cannot load the database');
         }
       })
-      .catch ((error) => {
+      .catch(() => {
         res.status(500).send('Cannot load the database');
-      })
+      });
   }
 }
 
