@@ -12,7 +12,7 @@ async function readDatabase(path) {
           const firstnameIndex = keys.indexOf('firstname');
           const fieldIndex = keys.indexOf('field');
           const result = {};
-          for (let i = 1; i < lines.length; i++) {
+          for (let i = 1; i < lines.length; i += 1) {
             const values = lines[i].split(',');
             const firstname = values[firstnameIndex];
             const field = values[fieldIndex];
