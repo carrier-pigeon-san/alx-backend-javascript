@@ -18,6 +18,9 @@ describe('sendPaymentRequestToApi', () => {
     // Assert that console.log was called with the correct message
     assert(spyConsole.calledWith('The total is: 120'), 'console.log was not called with correct message');
 
+    // Assert that Utils.calculateNumber was called with the correct arguments
+    assert(spy.calledWithExactly('SUM', 100, 20), 'Utils.calculateNumber was not called with the correct arguments');
+
     // Restore the original functions
     spy.restore();
     spyConsole.restore();
